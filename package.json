@@ -18,5 +18,9 @@
   "license": "CC0-1.0",
   "devDependencies": {
     "electron": "^1.8.4"
+  },
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "sql.js": "^0.5.0"
   }
 }

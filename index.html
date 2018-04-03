@@ -1,20 +1,61 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="UTF-8">
-        <title>Hello World!</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Alexandrie</title>
+        <link rel="stylesheet" media="screen" type="text/css" href="static/libs/font-awesome-4.5.0/css/font-awesome.min.css" />
+        <link rel="stylesheet" media="screen" type="text/css" href="static/css/index.css" />
     </head>
     <body>
-        <h1>Hello World!</h1>
 
-        <!-- All of the Node.js APIs are available in this renderer process. -->
-        We are using Node.js <script>document.write(process.versions.node)</script>,
-        Chromium <script>document.write(process.versions.chrome)</script>,
-        and Electron <script>document.write(process.versions.electron)</script>.
+        <header>
+
+            <!-- <div>
+                <div flex="0" style="width: 60px;" class="app_menu_area windows">
+                    <div id="app_menu_container" class="fa fa-bars"></div>
+                </div>
+            </div> -->
+            <div>
+                <div flex="0" style="width: 60px;" class="app_menu_area windows">
+                    <div id="app_menu_container" class="fa fa-bars"></div>
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <div id="win_state_container" class="windows">
+                        <div id="win_minimize" class="win_state"></div>
+                        <div id="win_maximize" class="win_state"></div>
+                        <div id="win_close" class="win_state"></div>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+
+        <section id="main_area" class="v-col">
+
+            <!-- <h1>Hello World!</h1>
+            We are using Node.js <script>document.write(process.versions.node)</script>,
+            Chromium <script>document.write(process.versions.chrome)</script>,
+            and Electron <script>document.write(process.versions.electron)</script>. -->
+
+        </section>
 
         <script>
             // You can also require other files to run in this process
             require('./renderer.js')
         </script>
+
+        <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+
+        <script type="text/javascript" src="static/libs/jquery-2.2.0/jquery-2.2.0.min.js"></script>
+        <script type="text/javascript" src="static/libs/jquery-ui-1.11.4/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="static/libs/jsrender.min.js"></script>
+
+        <script type="text/javascript" src="static/js/index.js"></script>
+        <script type="text/javascript" src="static/js/database.js"></script>
+
+        <script>if (window.module) module = window.module;</script>
     </body>
 </html>
